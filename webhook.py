@@ -13,7 +13,7 @@ app = Flask(__name__)
 # By default, the flask route responds to the GET requests.
 # This prefrence can be altered by providing methods argument to route() decorator.
 
-@app.route('/webhook') #, methods=['POST']
+@app.route('/webhook', methods=['POST'])
 def webhook():
 	# Parse the incoming JSON request data and returns it.
 	# By default this function will return None if the mumetype is not application/json but this can be overridden by the force parameter.
